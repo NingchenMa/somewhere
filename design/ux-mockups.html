@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Somewhere — Minimalist UX</title>
+<style>
+  :root{
+    --bg:#fbfbfa; --card:#ffffff; --ink:#15140f; --ink-2:#6d6a63; --ink-3:#a8a59d;
+    --line:#ececea; --line-2:#dedcd7;
+    --sans:'Helvetica Neue',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;font-weight:400;}
+  .wrap{max-width:1080px;margin:0 auto;padding:80px 28px 96px;}
+  .mast{margin-bottom:6px;}
+  .logo{font-size:15px;letter-spacing:.42em;text-transform:uppercase;margin:0;}
+  .tag{color:var(--ink-3);font-size:13px;margin:14px 0 0;letter-spacing:.02em;}
+  .lead{max-width:560px;margin:34px 0 0;color:var(--ink-2);font-size:15px;line-height:1.75;}
+  .rule{height:0.5px;background:var(--line-2);border:0;margin:64px 0 0;}
+  .sec{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-3);margin:56px 0 22px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px;align-items:start;}
+  .cap{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);margin:0 2px 12px;display:flex;justify-content:space-between;}
+  .screen{background:var(--card);border:0.5px solid var(--line-2);border-radius:6px;padding:36px 28px;min-height:440px;display:flex;flex-direction:column;}
+  .brand{font-size:12px;letter-spacing:.40em;text-transform:uppercase;margin:0 0 64px;}
+  .qlabel{font-size:13px;color:var(--ink-3);margin:0 0 16px;}
+  .typed{font-size:20px;line-height:1.55;margin:0;font-weight:400;}
+  .caret{border-left:1.5px solid var(--ink);margin-left:2px;animation:blink 1.1s step-end infinite;}
+  @keyframes blink{50%{opacity:0;}}
+  .spacer{flex:1;}
+  .barfoot{border-top:0.5px solid var(--line);padding-top:18px;display:flex;align-items:center;justify-content:space-between;}
+  .muted{font-size:12px;color:var(--ink-3);}
+  .send{font-size:13px;color:var(--ink);text-decoration:none;}
+  .echo{font-size:12px;color:var(--ink-3);margin:0 0 44px;}
+  .passage{font-size:21px;line-height:1.6;margin:0;font-weight:400;letter-spacing:-.005em;}
+  .attrib{font-size:12px;color:var(--ink-2);}
+  .attrib i{font-style:italic;}
+  .acts{display:flex;gap:20px;font-size:15px;color:var(--ink-3);}
+  .acts span{cursor:pointer;}
+  .acts span:hover{color:var(--ink);}
+  .listhead{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:34px;}
+  .listhead p{font-size:12px;letter-spacing:.24em;text-transform:uppercase;margin:0;}
+  .item{padding-bottom:20px;margin-bottom:20px;border-bottom:0.5px solid var(--line);}
+  .item:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0;}
+  .item .t{font-size:15px;line-height:1.55;margin:0;}
+  .item .m{font-size:12px;color:var(--ink-3);margin:7px 0 0;}
+  .center-col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:22px;}
+  .dot{width:6px;height:6px;border-radius:50%;background:var(--ink);animation:pulse 1.3s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{opacity:.25;}50%{opacity:1;}}
+  .empty-h{font-size:16px;margin:0;}
+  .empty-p{font-size:13px;color:var(--ink-3);max-width:230px;line-height:1.6;margin:0;}
+  .ghost-btn{font-size:13px;border:0.5px solid var(--line-2);background:transparent;border-radius:4px;padding:10px 20px;cursor:pointer;font-family:var(--sans);color:var(--ink);}
+  .notes{margin-top:72px;}
+  .notes h2{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-3);margin:0 0 28px;font-weight:400;}
+  .ncols{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:36px 40px;}
+  .ncols h3{font-size:13px;margin:0 0 8px;font-weight:400;}
+  .ncols p{font-size:13px;line-height:1.7;color:var(--ink-2);margin:0;}
+  .sw{display:flex;gap:0;margin-top:14px;border:0.5px solid var(--line-2);border-radius:4px;overflow:hidden;width:fit-content;}
+  .sw span{width:38px;height:30px;}
+  .foot{margin-top:64px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="mast">
+    <p class="logo">Somewhere</p>
+    <p class="tag">someone has felt this too</p>
+  </div>
+  <p class="lead">Write down a thought. Somewhere returns a single passage from the world's public-domain books that meets it. Minimal by intent — one idea on screen at a time, nothing competing for attention.</p>
+  <hr class="rule" />
+
+  <p class="sec">The flow</p>
+  <div class="grid">
+
+    <div>
+      <div class="cap"><span>01 / Write</span><span>home</span></div>
+      <div class="screen">
+        <p class="brand">Somewhere</p>
+        <p class="qlabel">What's on your mind?</p>
+        <p class="typed">I keep starting things I never finish.<span class="caret">&nbsp;</span></p>
+        <div class="spacer"></div>
+        <div class="barfoot">
+          <span class="muted">Return to send</span>
+          <a class="send" href="#">Find &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap"><span>02 / Listen</span><span>searching</span></div>
+      <div class="screen">
+        <div class="center-col">
+          <div class="dot"></div>
+          <p class="muted">Searching</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap"><span>03 / Receive</span><span>result</span></div>
+      <div class="screen">
+        <p class="echo">I keep starting things I never finish.</p>
+        <p class="passage">To begin again is not to fail, but to remain alive to wonder.</p>
+        <div class="spacer"></div>
+        <div class="barfoot">
+          <span class="attrib">Eliot, <i>Middlemarch</i></span>
+          <span class="acts"><span>Save</span><span>Another</span></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="sec">Coming back</p>
+  <div class="grid">
+
+    <div>
+      <div class="cap"><span>04 / Kept</span><span>list</span></div>
+      <div class="screen">
+        <div class="listhead">
+          <p>Kept</p>
+          <span class="muted">12</span>
+        </div>
+        <div class="item">
+          <p class="t">To begin again is not to fail.</p>
+          <p class="m">Eliot &middot; Jun 14</p>
+        </div>
+        <div class="item">
+          <p class="t">How far that little candle throws his beams.</p>
+          <p class="m">Shakespeare &middot; Jun 9</p>
+        </div>
+        <div class="item">
+          <p class="t">We live as we dream &mdash; alone.</p>
+          <p class="m">Conrad &middot; Jun 2</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap"><span>05 / One passage</span><span>detail</span></div>
+      <div class="screen">
+        <p class="echo">Kept Jun 14</p>
+        <p class="passage">To begin again is not to fail, but to remain alive to wonder.</p>
+        <p class="muted" style="margin:24px 0 0;line-height:1.7;">your thought &mdash; I keep starting things I never finish.</p>
+        <div class="spacer"></div>
+        <div class="barfoot">
+          <span class="attrib">Eliot, <i>Middlemarch</i> &middot; ch. 15</span>
+          <span class="acts"><span>Share</span><span>Read</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap"><span>06 / Nothing yet</span><span>first run</span></div>
+      <div class="screen">
+        <div class="listhead">
+          <p>Kept</p>
+          <span class="muted">0</span>
+        </div>
+        <div class="center-col">
+          <p class="empty-h">Nothing kept yet</p>
+          <p class="empty-p">When a passage meets your thought, save it here.</p>
+          <button class="ghost-btn">Write a thought</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="notes">
+    <h2>Principles</h2>
+    <div class="ncols">
+      <div>
+        <h3>One thing at a time</h3>
+        <p>Each screen holds a single idea — your words, or a single passage in reply. No cards stacked on cards, no sidebars, no counters demanding attention.</p>
+      </div>
+      <div>
+        <h3>Type is the interface</h3>
+        <p>One neutral sans, two weights, a tight scale. The passage is the largest thing on screen; everything else recedes to small, quiet labels.</p>
+      </div>
+      <div>
+        <h3>Near-monochrome</h3>
+        <p>Off-white paper, near-black ink, three greys for hierarchy. No accent color — restraint is the brand. Hairline rules instead of boxes and shadows.</p>
+        <div class="sw">
+          <span style="background:#fbfbfa;"></span>
+          <span style="background:#dedcd7;"></span>
+          <span style="background:#a8a59d;"></span>
+          <span style="background:#6d6a63;"></span>
+          <span style="background:#15140f;"></span>
+        </div>
+      </div>
+      <div>
+        <h3>Quiet motion</h3>
+        <p>A single pulsing dot while it searches; a blinking caret while you write. Nothing spins or slides more than it must.</p>
+      </div>
+      <div>
+        <h3>Space does the work</h3>
+        <p>Generous margins and a tall first gap let the writing breathe. Empty space is treated as a feature, not something to fill.</p>
+      </div>
+      <div>
+        <h3>Under the hood</h3>
+        <p>React + Tailwind. Passages from the free Gutendex API over Project Gutenberg, matched by an agent. Kept passages saved locally in the browser.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="foot">Somewhere &middot; minimalist UX &middot; concept</p>
+
+</div>
+</body>
+</html>
