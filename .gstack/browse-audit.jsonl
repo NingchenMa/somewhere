@@ -1,0 +1,34 @@
+{"ts":"2026-06-18T07:22:47.061Z","cmd":"goto","args":"https://ningchenma.github.io/somewhere/","origin":"https://ningchenma.github.io/somewhere/","durationMs":285,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T07:22:48.810Z","cmd":"screenshot","args":"/tmp/sw-live.png","origin":"https://ningchenma.github.io/somewhere/","durationMs":185,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T07:22:48.868Z","cmd":"console","args":"--errors","origin":"https://ningchenma.github.io/somewhere/","durationMs":1,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:17:39.305Z","cmd":"viewport","args":"1280x900","origin":"about:blank","durationMs":5,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:17:39.543Z","cmd":"goto","args":"http://localhost:8732/index.html","origin":"http://localhost:8732/index.html","durationMs":186,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:17:40.856Z","cmd":"click","args":".lang-btn[data-lang=\"zh\"]","origin":"http://localhost:8732/index.html","durationMs":51,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:17:41.321Z","cmd":"js","args":"document.getElementById('prompt').textContent","origin":"http://localhost:8732/index.html","durationMs":2,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:17:41.374Z","cmd":"js","args":"document.body.classList.contains('zh')","origin":"http://localhost:8732/index.html","durationMs":1,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:17:41.644Z","cmd":"screenshot","args":"/tmp/sw-zh-compose.png","origin":"http://localhost:8732/index.html","durationMs":221,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:17:41.718Z","cmd":"click","args":"#thought","origin":"http://localhost:8732/index.html","durationMs":22,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:17:41.780Z","cmd":"fill","args":"#thought 明明身边都是人，却没有人真正看见我。","origin":"http://localhost:8732/index.html","durationMs":7,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:17:41.838Z","cmd":"press","args":"Enter","origin":"http://localhost:8732/index.html","durationMs":5,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:17:44.198Z","cmd":"js","args":"document.getElementById('author').textContent","origin":"http://localhost:8732/index.html","durationMs":1,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:17:44.254Z","cmd":"js","args":"document.getElementById('quote').textContent","origin":"http://localhost:8732/index.html","durationMs":1,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:17:44.308Z","cmd":"js","args":"document.getElementById('why').textContent","origin":"http://localhost:8732/index.html","durationMs":1,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:17:44.363Z","cmd":"console","args":"--errors","origin":"http://localhost:8732/index.html","durationMs":1,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:14.611Z","cmd":"goto","args":"http://localhost:8732/index.html","origin":"http://localhost:8732/index.html","durationMs":30,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:15.693Z","cmd":"click","args":".lang-btn[data-lang=\"zh\"]","origin":"http://localhost:8732/index.html","durationMs":20,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:16.223Z","cmd":"screenshot","args":"/tmp/sw-zh-compose.png","origin":"http://localhost:8732/index.html","durationMs":166,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:16.291Z","cmd":"click","args":"#thought","origin":"http://localhost:8732/index.html","durationMs":16,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:16.349Z","cmd":"fill","args":"#thought 明明身边都是人，却没有人真正看见我。","origin":"http://localhost:8732/index.html","durationMs":6,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:16.406Z","cmd":"press","args":"Enter","origin":"http://localhost:8732/index.html","durationMs":4,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:18.770Z","cmd":"js","args":"document.getElementById('author').textContent","origin":"http://localhost:8732/index.html","durationMs":1,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:18.828Z","cmd":"js","args":"document.getElementById('quote').textContent","origin":"http://localhost:8732/index.html","durationMs":0,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:18.888Z","cmd":"js","args":"document.getElementById('source').textContent","origin":"http://localhost:8732/index.html","durationMs":0,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:19.076Z","cmd":"screenshot","args":"/tmp/sw-zh-card.png","origin":"http://localhost:8732/index.html","durationMs":130,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:39.583Z","cmd":"goto","args":"http://localhost:8732/index.html?v=1781817879","origin":"http://localhost:8732/index.html?v=1781817879","durationMs":22,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:40.662Z","cmd":"click","args":".lang-btn[data-lang=\"zh\"]","origin":"http://localhost:8732/index.html?v=1781817879","durationMs":17,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:41.037Z","cmd":"click","args":"#thought","origin":"http://localhost:8732/index.html?v=1781817879","durationMs":13,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:41.094Z","cmd":"fill","args":"#thought 明明身边都是人，却没有人真正看见我。","origin":"http://localhost:8732/index.html?v=1781817879","durationMs":5,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:41.151Z","cmd":"press","args":"Enter","origin":"http://localhost:8732/index.html?v=1781817879","durationMs":4,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:43.509Z","cmd":"js","args":"document.getElementById('author').textContent","origin":"http://localhost:8732/index.html?v=1781817879","durationMs":1,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:43.564Z","cmd":"js","args":"document.getElementById('quote').textContent","origin":"http://localhost:8732/index.html?v=1781817879","durationMs":0,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-18T21:24:43.742Z","cmd":"screenshot","args":"/tmp/sw-zh-card.png","origin":"http://localhost:8732/index.html?v=1781817879","durationMs":123,"status":"ok","hasCookies":false,"mode":"launched"}

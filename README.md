@@ -17,6 +17,8 @@ Write down the thing you're feeling — the one you can't quite explain — and 
 
 It's a one-breath ritual: **one thought in, one resonance out.**
 
+> **Bilingual / 双语** — toggle **中文 / EN** in the top-right. The Chinese version isn't a translation: it draws on its own canon — 老子、庄子、论语、唐诗宋词（李白、杜甫、王维、苏轼、李清照…）、鲁迅、泰戈尔（郑振铎 译）— alongside Western voices rendered in Chinese. It opens in Chinese for visitors whose browser is set to Chinese.
+
 ## Why I built it
 
 The feelings that are hardest to sit with are the ones that make you feel *alone* — "I'm surrounded by people but no one really sees me," "I don't just want money, I want to decide the shape of my life," "I think I'm slowly becoming someone I'd like." In those moments you don't need information. You need to know the feeling isn't new, isn't broken, isn't only yours.
@@ -57,6 +59,14 @@ In short: the AI, when used, is an *ingredient* — disciplined by real attribut
 <tr>
 <td align="center"><sub><b>Write the thing you can't quite explain</b></sub></td>
 <td align="center"><sub><b>Keep what meets you, in your Collection</b></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="screenshots/05-zh-compose.png" alt="中文版的书写界面" width="100%"></td>
+<td width="50%"><img src="screenshots/04-zh-card.png" alt="中文版的共鸣卡片，匹配到梭罗" width="100%"></td>
+</tr>
+<tr>
+<td align="center"><sub><b>中文：写下那个你说不太清楚的念头</b></sub></td>
+<td align="center"><sub><b>遇见一句懂你的话</b></sub></td>
 </tr>
 </table>
 
